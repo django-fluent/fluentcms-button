@@ -1,8 +1,5 @@
-from __future__ import unicode_literals
-
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
-from django.utils.translation import ugettext_lazy as _, pgettext_lazy
+from django.utils.translation import gettext_lazy as _, pgettext_lazy
 
 from fluent_contents.extensions import PluginHtmlField, PluginUrlField
 from fluent_contents.models import ContentItem
@@ -10,18 +7,17 @@ from fluent_contents.models import ContentItem
 from . import appsettings
 
 
-@python_2_unicode_compatible
 class ButtonItem(ContentItem):
     """
     Pager item, to show a previous/next page.
     The pages are auto determined, but can be overwritten
     """
     ALIGN_CHOICES = (
-        ('', pgettext_lazy("align", u"Inline")),
-        ('left', pgettext_lazy("align", u"Left")),
-        ('center', pgettext_lazy("align", u"Center")),
-        ('right', pgettext_lazy("align", u"Right")),
-        ('block', pgettext_lazy("align", u"Full Width")),
+        ('', pgettext_lazy("align", "Inline")),
+        ('left', pgettext_lazy("align", "Left")),
+        ('center', pgettext_lazy("align", "Center")),
+        ('right', pgettext_lazy("align", "Right")),
+        ('block', pgettext_lazy("align", "Full Width")),
     )
 
     title = models.CharField(_("Title"), max_length=200)
