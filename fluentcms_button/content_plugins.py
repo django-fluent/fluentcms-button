@@ -2,7 +2,8 @@
 Definition of the plugin.
 """
 from django.utils.translation import gettext_lazy as _
-from fluent_contents.extensions import ContentPlugin, plugin_pool, ContentItemForm
+from fluent_contents.extensions import ContentItemForm, ContentPlugin, plugin_pool
+
 from .models import ButtonItem
 
 
@@ -11,17 +12,21 @@ class ButtonPlugin(ContentPlugin):
     """
     CMS plugin for button element.
     """
+
     category = _("Navigation")
     model = ButtonItem
     render_template = "fluentcms_button/button.html"
     fieldsets = (
-        (None, {
-            'fields': (
-                'title',
-                'url',
-                'style',
-                'size',
-                'align',
-            ),
-        }),
+        (
+            None,
+            {
+                "fields": (
+                    "title",
+                    "url",
+                    "style",
+                    "size",
+                    "align",
+                ),
+            },
+        ),
     )
