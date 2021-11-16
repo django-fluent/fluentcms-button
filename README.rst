@@ -1,8 +1,8 @@
 fluentcms-button
 ===================
 
-.. image:: https://img.shields.io/travis/django-fluent/fluentcms-button/master.svg?branch=master
-    :target: http://travis-ci.org/django-fluent/fluentcms-button
+.. image:: https://github.com/django-fluent/fluentcms-button/actions/workflows/tests.yaml/badge.svg?branch=master
+    :target: https://github.com/django-fluent/fluentcms-button/actions/workflows/tests.yaml
 .. image:: https://img.shields.io/pypi/v/fluentcms-button.svg
     :target: https://pypi.python.org/pypi/fluentcms-button/
 .. image:: https://img.shields.io/badge/wheel-yes-green.svg
