@@ -57,6 +57,6 @@ jobs:
       - name: Run Tests
         run: |
           echo "Python ${{ matrix.python }} / Django ${{ matrix.django }}"
-          coverage run --source=fluentcms_button runtests.py
+          coverage run --rcfile=.coveragerc runtests.py
           codecov
         continue-on-error: ${{ contains(matrix.django, '4.0') }}
