@@ -1,11 +1,9 @@
 fluentcms-button
-===================
+================
 
 .. image:: https://github.com/django-fluent/fluentcms-button/actions/workflows/tests.yaml/badge.svg?branch=master
     :target: https://github.com/django-fluent/fluentcms-button/actions/workflows/tests.yaml
 .. image:: https://img.shields.io/pypi/v/fluentcms-button.svg
-    :target: https://pypi.python.org/pypi/fluentcms-button/
-.. image:: https://img.shields.io/badge/wheel-yes-green.svg
     :target: https://pypi.python.org/pypi/fluentcms-button/
 .. image:: https://img.shields.io/pypi/l/fluentcms-button.svg
     :target: https://pypi.python.org/pypi/fluentcms-button/
