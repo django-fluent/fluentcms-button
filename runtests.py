@@ -41,6 +41,7 @@ if not settings.configured:
         ],
         FLUENT_CONTENTS_CACHE_OUTPUT = False,
         TEST_RUNNER = 'django.test.runner.DiscoverRunner',
+        DEFAULT_AUTO_FIELD='django.db.models.BigAutoField',
     )
 
 DEFAULT_TEST_APPS = [
